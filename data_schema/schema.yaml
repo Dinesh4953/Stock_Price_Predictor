@@ -1,0 +1,20 @@
+columns:
+  - Date: str
+  - Open: float
+  - High: float
+  - Low: float
+  - Last: float
+  - Close: float
+  - Total_Trade_Quantity: float
+  - Turnover_Lacs: float
+
+numerical_columns:
+  - Open
+  - High
+  - Low
+  - Last
+  - Close
+  - Total_Trade_Quantity
+  - Turnover_Lacs
+
+target_column: Close
