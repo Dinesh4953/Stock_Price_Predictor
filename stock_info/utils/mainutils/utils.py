@@ -38,3 +38,15 @@ def save_numpy_array_data(file_path:str, array:np.array):
             np.save(file_obj, array)
     except Exception as e:
         raise StockPredictionException(e, sys)
+    
+    
+## pkl object saving
+def save_object(file_path:str, obj:object) -> None:
+    try:
+        logging.info("Entered the save_object method of MainUtils Class")
+        os.makedirs(os.path.dirname(file_path), exist_ok=True)
+        with open(file_path, "wb") as file_obj:
+            pickle.dump(obj=obj, file=file_obj)
+        logging.info("Exited the save_object method of MainUtils Class")
+    except Exception as e:
+        raise StockPredictionException(e, sys)
