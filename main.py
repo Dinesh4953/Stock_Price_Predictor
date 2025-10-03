@@ -1,6 +1,7 @@
 from stock_info.components.data_ingestion import DataIngestion, DataIngestionArtifact
 from stock_info.components.data_validation import DataValidation, DataValidationArtifact
 from stock_info.components.data_transformation import DataTransformation, DataTransformationArtifact
+from stock_info.components.model_trainer import ModelTrainer, ModelTrainerConfig, ModelTrainerArtifact
 from stock_info.Exception.exception import StockPredictionException
 from stock_info.logging.logger import logging
 from stock_info.entity.config_entity import DataIngestionConfig, TrainingPipelineConfig, DataValidationConfig, DataTransformationConfig
@@ -34,6 +35,13 @@ if __name__ == "__main__":
         logging.info("Data Transformation completed")
         print("--------------------------------------------------------------------------")
 
+        logging.info("Model Training started")
+        model_trainer_config = ModelTrainerConfig(training_pipeline_config)
+        model_trainer = ModelTrainer(model_trainer_config=model_trainer_config, data_transformation_artifact=data_transformation_artifact)
+        model_trainer_artifact = model_trainer.initiate_model_trainer()
+        print(model_trainer_artifact)
+        logging.info("Model training artifact created")
+        print("--------------------------------------------------------------------------")
         
     except Exception as e:
         raise StockPredictionException(e, sys)

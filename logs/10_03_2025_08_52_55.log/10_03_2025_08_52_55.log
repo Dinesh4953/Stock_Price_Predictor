@@ -1,0 +1,32 @@
+[ 2025-10-03 08:52:55,653 ] 148 numexpr.utils - INFO - Note: NumExpr detected 12 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+[ 2025-10-03 08:52:55,653 ] 160 numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+[ 2025-10-03 08:52:58,760 ] 16 root - INFO - Initiated the data ingestion
+[ 2025-10-03 08:53:00,901 ] 63 root - INFO - Performed train test split
+[ 2025-10-03 08:53:00,901 ] 64 root - INFO - Exited split_data_as_test method of Data Ingestion class
+[ 2025-10-03 08:53:00,901 ] 69 root - INFO - Exporting train and test file path
+[ 2025-10-03 08:53:00,913 ] 76 root - INFO - Exported train and test file path
+[ 2025-10-03 08:53:00,913 ] 20 root - INFO - Data Ingestion is Completed
+[ 2025-10-03 08:53:00,923 ] 24 root - INFO - Initiated data validation
+[ 2025-10-03 08:53:00,972 ] 38 root - INFO - Required numnber of columns: 8
+[ 2025-10-03 08:53:00,972 ] 39 root - INFO - Data frame has columns : 8
+[ 2025-10-03 08:53:00,972 ] 38 root - INFO - Required numnber of columns: 8
+[ 2025-10-03 08:53:00,972 ] 39 root - INFO - Data frame has columns : 8
+[ 2025-10-03 08:53:01,001 ] 28 root - INFO - Data Validation is Completed
+[ 2025-10-03 08:53:01,001 ] 32 root - INFO - Data Transformation Initiated 
+[ 2025-10-03 08:53:01,001 ] 55 root - INFO - Entered initiated data transformation
+[ 2025-10-03 08:53:01,001 ] 57 root - INFO - Started data transformation 
+[ 2025-10-03 08:53:01,012 ] 40 root - INFO - Entered get_data_transformer_object method of Transformation Class
+[ 2025-10-03 08:53:01,012 ] 43 root - INFO - Initialise KNNImputer with {'missing_values': nan, 'n_neighbors': 3, 'weights': 'uniform'}
+[ 2025-10-03 08:53:01,012 ] 47 root - INFO - Initialised StandardScaler
+[ 2025-10-03 08:53:01,021 ] 46 root - INFO - Entered the save_object method of MainUtils Class
+[ 2025-10-03 08:53:01,024 ] 50 root - INFO - Exited the save_object method of MainUtils Class
+[ 2025-10-03 08:53:01,024 ] 46 root - INFO - Entered the save_object method of MainUtils Class
+[ 2025-10-03 08:53:01,024 ] 50 root - INFO - Exited the save_object method of MainUtils Class
+[ 2025-10-03 08:53:01,024 ] 35 root - INFO - Data Transformation completed
+[ 2025-10-03 08:53:01,024 ] 38 root - INFO - Model Training started
+[ 2025-10-03 08:53:19,269 ] 46 root - INFO - Entered the save_object method of MainUtils Class
+[ 2025-10-03 08:53:19,269 ] 50 root - INFO - Exited the save_object method of MainUtils Class
+[ 2025-10-03 08:53:19,269 ] 46 root - INFO - Entered the save_object method of MainUtils Class
+[ 2025-10-03 08:53:19,269 ] 50 root - INFO - Exited the save_object method of MainUtils Class
+[ 2025-10-03 08:53:19,269 ] 246 root - INFO - Model trainder artifact: ModelTrainerArtifact(trained_model_file_path='Artifacts\\10_03_2025_08_52_58\\model_trainer\\trained_model\\model.pkl', train_metric_artifact=RegressionMetricArtifact(model_mae=0.2991193017166776, model_mse=0.17837125519913946, model_rmse=0.4223402126238271, model_r2=0.9999361029704853), test_metric_artifact=RegressionMetricArtifact(model_mae=0.28382047922633946, model_mse=0.15152275340241295, model_rmse=0.38925923675927454, model_r2=0.9999247316382455))
+[ 2025-10-03 08:53:19,269 ] 43 root - INFO - Model training artifact created

@@ -1,0 +1,24 @@
+Close:
+  drift_status: true
+  p_value: 0.030781732027587033
+Date:
+  drift_status: true
+  p_value: 0.030781732027587033
+High:
+  drift_status: true
+  p_value: 0.03341220541421216
+Last:
+  drift_status: true
+  p_value: 0.021993233866770608
+Low:
+  drift_status: true
+  p_value: 0.011832631538914536
+Open:
+  drift_status: true
+  p_value: 0.021993233866770608
+Total Trade Quantity:
+  drift_status: true
+  p_value: 0.03623779807851033
+Turnover (Lacs):
+  drift_status: true
+  p_value: 0.0169453553697532

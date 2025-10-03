@@ -45,8 +45,8 @@ class DataTransformation:
             )
             scaler: StandardScaler = StandardScaler()
             logging.info("Initialised StandardScaler")
-            processor:Pipeline = Pipeline([("imputer",imputer)
-                                           ])
+            processor:Pipeline = Pipeline([("imputer",imputer),
+                                         ("scaler",scaler)  ])
             return processor
         except Exception as e:
             raise StockPredictionException(e, sys)
